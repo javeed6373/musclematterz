@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSCLE MATTERZ | Head Coach Wahed Ali</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#FFB800',
+                            goldHover: '#E0A200',
+                            darkBg: '#111115',
+                            cardBg: '#19191D',
+                            border: '#2A2A30'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Oswald', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-brand-darkBg text-gray-200 font-body antialiased selection:bg-brand-gold selection:text-black">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-brand-darkBg/95 backdrop-blur-md border-b border-brand-border/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo SVG -->
+            <a href="#" class="flex items-center gap-3">
+                <svg class="h-12 w-auto" viewBox="0 0 4080 2112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="4080" height="2112" fill="#19191d"/>
+                    <path d="M 3497,1339 L 3494,1345 L 3494,1374 L 3496,1379 L 3499,1381 L 3649,1381 L 3655,1383 L 3658,1387 L 3656,1391 L 3640,1408 L 3620,1433 L 3592,1463 L 3573,1487 L 3557,1503 L 3540,1525 L 3492,1579 L 3484,1592 L 3484,1616 L 3488,1620 L 3492,1621 L 3731,1621 L 3735,1619 L 3737,1610 L 3736,1582 L 3732,1578 L 3564,1578 L 3560,1576 L 3558,1573 L 3559,1569 L 3582,1545 L 3619,1500 L 3634,1485 L 3656,1457 L 3684,1427 L 3702,1404 L 3714,1393 L 3726,1377 L 3731,1373 L 3733,1366 L 3733,1344 L 3731,1340 L 3726,1337 L 3502,1337 Z M 3160,1339 L 3158,1342 L 3157,1617 L 3160,1620 L 3164,1621 L 3194,1621 L 3199,1620 L 3202,1617 L 3202,1522 L 3208,1516 L 3282,1516 L 3319,1569 L 3335,1595 L 3353,1619 L 3358,1621 L 3403,1620 L 3405,1618 L 3405,1615 L 3376,1574 L 3337,1514 L 3337,1510 L 3341,1506 L 3361,1494 L 3378,1477 L 3386,1464 L 3391,1452 L 3395,1430 L 3394,1412 L 3391,1400 L 3378,1375 L 3362,1358 L 3346,1348 L 3324,1340 L 3305,1337 L 3164,1337 Z M 2845,1338 L 2842,1342 L 2841,1348 L 2842,1617 L 2845,1620 L 2850,1621 L 3045,1621 L 3051,1619 L 3053,1616 L 3053,1586 L 3052,1582 L 3046,1578 L 2897,1579 L 2891,1577 L 2887,1573 L 2887,1502 L 2889,1498 L 2895,1496 L 3026,1496 L 3030,1493 L 3030,1459 L 3028,1456 L 3023,1454 L 2891,1453 L 2887,1449 L 2888,1385 L 2896,1381 L 3049,1380 L 3052,1377 L 3053,1369 L 3053,1347 L 3051,1340 L 3046,1337 Z M 2523,1338 L 2520,1340 L 2518,1348 L 2519,1376 L 2521,1379 L 2527,1381 L 2609,1381 L 2613,1384 L 2614,1616 L 2617,1620 L 2620,1621 L 2656,1620 L 2659,1617 L 2660,1385 L 2663,1382 L 2667,1381 L 2750,1381 L 2754,1379 L 2757,1375 L 2756,1342 L 2754,1339 L 2748,1337 Z M 2229,1338 L 2226,1342 L 2226,1376 L 2228,1379 L 2232,1381 L 2315,1381 L 2318,1382 L 2321,1386 L 2321,1616 L 2326,1621 L 2362,1620 L 2366,1618 L 2367,1386 L 2372,1381 L 2457,1381 L 2463,1377 L 2464,1373 L 2462,1340 L 2457,1337 Z M 2001,1339 L 1997,1344 L 1977,1391 L 1967,1410 L 1947,1459 L 1932,1489 L 1925,1508 L 1910,1539 L 1895,1577 L 1881,1605 L 1877,1618 L 1883,1621 L 1915,1621 L 1921,1619 L 1925,1614 L 1926,1609 L 1942,1577 L 1948,1560 L 1956,1554 L 2090,1553 L 2094,1555 L 2099,1561 L 2103,1574 L 2125,1619 L 2130,1621 L 2167,1621 L 2171,1619 L 2173,1616 L 2160,1591 L 2149,1562 L 2142,1550 L 2138,1537 L 2134,1531 L 2124,1505 L 2112,1482 L 2094,1437 L 2050,1340 L 2046,1337 L 2007,1337 Z M 1488,1341 L 1487,1617 L 1493,1621 L 1525,1621 L 1530,1619 L 1532,1616 L 1531,1457 L 1529,1437 L 1529,1421 L 1532,1418 L 1540,1426 L 1579,1478 L 1587,1491 L 1617,1529 L 1620,1535 L 1627,1540 L 1650,1540 L 1655,1536 L 1675,1510 L 1682,1498 L 1702,1475 L 1719,1449 L 1726,1442 L 1743,1419 L 1746,1419 L 1748,1421 L 1749,1428 L 1747,1434 L 1745,1457 L 1745,1617 L 1751,1621 L 1784,1621 L 1790,1618 L 1791,1344 L 1787,1338 L 1753,1337 L 1747,1339 L 1729,1361 L 1727,1366 L 1683,1425 L 1648,1476 L 1641,1483 L 1637,1483 L 1631,1478 L 1611,1447 L 1569,1391 L 1546,1357 L 1531,1339 L 1525,1337 L 1493,1337 Z M 3249,939 L 3244,946 L 3245,1219 L 3249,1223 L 3451,1222 L 3455,1215 L 3455,1185 L 3448,1180 L 3294,1180 L 3291,1177 L 3289,1172 L 3289,1107 L 3290,1103 L 3293,1100 L 3426,1099 L 3430,1097 L 3433,1093 L 3433,1062 L 3427,1056 L 3293,1055 L 3289,1050 L 3289,988 L 3292,984 L 3307,982 L 3447,983 L 3452,981 L 3455,975 L 3454,943 L 3448,938 Z M 2941,939 L 2938,943 L 2937,957 L 2937,1215 L 2939,1220 L 2943,1223 L 3143,1222 L 3147,1214 L 3147,1185 L 3139,1180 L 2993,1181 L 2988,1180 L 2983,1175 L 2983,945 L 2981,941 L 2973,938 Z M 1907,939 L 1903,947 L 1903,1086 L 1905,1123 L 1909,1140 L 1916,1158 L 1938,1188 L 1959,1205 L 1978,1215 L 1990,1218 L 1998,1222 L 2017,1225 L 2053,1225 L 2069,1222 L 2094,1213 L 2110,1204 L 2124,1193 L 2131,1186 L 2150,1160 L 2157,1144 L 2162,1123 L 2164,1098 L 2163,942 L 2158,938 L 2128,938 L 2124,940 L 2120,946 L 2120,1104 L 2117,1123 L 2113,1129 L 2109,1140 L 2095,1159 L 2086,1164 L 2081,1169 L 2071,1174 L 2064,1175 L 2056,1180 L 2051,1181 L 2020,1181 L 2011,1179 L 1994,1172 L 1977,1161 L 1966,1149 L 1959,1138 L 1951,1119 L 1948,1093 L 1948,942 L 1942,938 Z M 1489,941 L 1487,945 L 1487,1216 L 1490,1222 L 1520,1224 L 1527,1223 L 1531,1218 L 1531,1054 L 1529,1041 L 1529,1023 L 1531,1020 L 1533,1020 L 1545,1034 L 1619,1135 L 1628,1142 L 1644,1142 L 1650,1141 L 1655,1138 L 1671,1115 L 1700,1079 L 1708,1066 L 1714,1060 L 1736,1028 L 1745,1019 L 1747,1019 L 1749,1021 L 1747,1034 L 1745,1063 L 1745,1218 L 1751,1223 L 1786,1223 L 1790,1219 L 1791,946 L 1788,940 L 1783,938 L 1754,938 L 1745,942 L 1735,957 L 1722,972 L 1705,999 L 1678,1033 L 1643,1083 L 1638,1086 L 1627,1074 L 1614,1053 L 1562,983 L 1553,968 L 1540,953 L 1537,947 L 1529,939 L 1495,938 Z M 2699,938 L 2665,948 L 2642,960 L 2616,980 L 2600,998 L 2584,1025 L 2576,1054 L 2573,1084 L 2577,1116 L 2585,1143 L 2599,1167 L 2619,1189 L 2638,1204 L 2667,1217 L 2688,1224 L 2706,1226 L 2748,1226 L 2764,1223 L 2810,1206 L 2822,1199 L 2838,1186 L 2838,1178 L 2823,1153 L 2820,1150 L 2816,1150 L 2808,1154 L 2803,1159 L 2780,1171 L 2758,1180 L 2749,1182 L 2717,1182 L 2700,1180 L 2682,1174 L 2670,1168 L 2653,1157 L 2645,1149 L 2632,1133 L 2625,1118 L 2620,1099 L 2619,1089 L 2620,1067 L 2625,1048 L 2631,1033 L 2636,1025 L 2658,1003 L 2683,989 L 2695,985 L 2711,982 L 2735,982 L 2755,985 L 2782,996 L 2812,1016 L 2821,1015 L 2843,988 L 2838,978 L 2818,963 L 2797,952 L 2774,943 L 2749,937 Z M 2350,937 L 2329,943 L 2305,954 L 2285,971 L 2277,981 L 2271,994 L 2268,1007 L 2268,1025 L 2273,1047 L 2281,1060 L 2296,1075 L 2319,1088 L 2338,1095 L 2419,1111 L 2435,1117 L 2447,1128 L 2451,1135 L 2451,1154 L 2446,1163 L 2436,1173 L 2420,1181 L 2412,1182 L 2402,1186 L 2365,1186 L 2347,1182 L 2323,1171 L 2315,1164 L 2306,1159 L 2290,1141 L 2286,1139 L 2280,1139 L 2257,1166 L 2256,1174 L 2268,1188 L 2292,1206 L 2310,1214 L 2326,1218 L 2334,1222 L 2362,1226 L 2401,1226 L 2418,1224 L 2438,1218 L 2463,1206 L 2469,1202 L 2483,1188 L 2495,1166 L 2499,1147 L 2500,1130 L 2495,1112 L 2489,1101 L 2476,1088 L 2454,1075 L 2428,1066 L 2406,1063 L 2355,1052 L 2330,1042 L 2318,1029 L 2315,1018 L 2316,1007 L 2318,1001 L 2323,994 L 2337,984 L 2360,977 L 2390,976 L 407,979 L 2421,984 L 2431,989 L 2446,1000 L 2458,1013 L 2466,1014 L 2483,998 L 2490,988 L 2490,983 L 2484,974 L 2475,965 L 2459,954 L 2448,948 L 2417,937 L 2402,937 L 2392,935 L 2368,935 Z M 721,257 L 714,261 L 696,267 L 666,283 L 659,289 L 644,308 L 623,347 L 615,367 L 601,393 L 592,415 L 565,467 L 562,478 L 557,485 L 551,498 L 479,607 L 469,620 L 465,629 L 374,762 L 369,774 L 363,782 L 353,802 L 331,837 L 309,880 L 303,897 L 298,906 L 297,912 L 292,922 L 279,959 L 266,1018 L 262,1054 L 256,1084 L 250,1105 L 240,1129 L 234,1148 L 232,1163 L 233,1191 L 241,1223 L 251,1245 L 279,1284 L 313,1317 L 325,1325 L 340,1338 L 376,1360 L 407,1375 L 441,1396 L 451,1400 L 516,1444 L 569,1475 L 591,1485 L 604,1493 L 622,1499 L 644,1511 L 725,1542 L 751,1548 L 775,1556 L 826,1567 L 842,1568 L 847,1570 L 883,1575 L 909,1577 L 987,1577 L 1112,1552 L 1126,1551 L 1145,1547 L 1180,1545 L 1186,1549 L 1204,1587 L 1240,1649 L 1264,1673 L 1271,1673 L 1275,1667 L 1276,1372 L 1274,1354 L 1262,1334 L 1244,1321 L 1204,1300 L 1193,1291 L 1181,1278 L 1182,1273 L 1188,1267 L 1211,1251 L 1221,1241 L 1225,1239 L 1247,1214 L 1251,1206 L 1252,1200 L 1250,1194 L 1247,1190 L 1243,1188 L 1230,1185 L 1213,1185 L 1193,1187 L 1172,1192 L 1161,1193 L 1144,1198 L 1133,1204 L 1123,1207 L 1087,1231 L 1037,1255 L 991,1267 L 959,1268 L 928,1265 L 901,1256 L 897,1256 L 864,1239 L 822,1204 L 805,1186 L 787,1163 L 784,1161 L 780,1161 L 781,1171 L 793,1202 L 824,1239 L 860,1266 L 889,1280 L 898,1286 L 932,1301 L 950,1307 L 983,1324 L 999,1337 L 1004,1345 L 1007,1355 L 989,1375 L 957,1390 L 931,1399 L 920,1400 L 888,1408 L 842,1415 L 735,1421 L 639,1420 L 602,1417 L 598,1413 L 599,1400 L 605,1382 L 605,1378 L 615,1360 L 642,1331 L 697,1282 L 694,1279 L 655,1289 L 641,1290 L 612,1296 L 550,1301 L 470,1301 L 412,1295 L 402,1292 L 379,1289 L 337,1278 L 320,1271 L 301,1260 L 277,1238 L 273,1230 L 260,1214 L 247,1192 L 246,1162 L 248,1150 L 253,1133 L 263,1112 L 271,1085 L 275,1062 L 277,1032 L 286,987 L 300,940 L 304,931 L 305,924 L 325,876 L 343,841 L 369,800 L 373,788 L 379,777 L 405,739 L 408,732 L 415,724 L 451,669 L 458,661 L 470,640 L 481,626 L 517,570 L 533,548 L 537,540 L 563,506 L 571,491 L 576,477 L 582,467 L 589,449 L 605,418 L 607,411 L 630,366 L 631,360 L 635,354 L 636,349 L 646,328 L 660,305 L 670,296 L 694,282 L 724,270 L 738,267 L 769,256 L 792,253 L 814,253 L 833,256 L 845,256 L 858,260 L 876,262 L 893,267 L 913,270 L 934,276 L 955,288 L 971,289 L 1018,303 L 1035,312 L 1043,320 L 1047,329 L 1047,345 L 1044,348 L 1040,348 L 1028,341 L 1021,341 L 1016,345 L 1000,375 L 992,403 L 987,434 L 984,444 L 984,454 L 981,466 L 979,485 L 976,493 L 974,515 L 964,547 L 962,549 L 959,549 L 957,546 L 957,529 L 955,516 L 956,495 L 967,446 L 975,424 L 978,402 L 973,394 L 960,387 L 954,385 L 942,386 L 931,394 L 925,404 L 916,435 L 910,485 L 900,529 L 896,539 L 896,543 L 886,562 L 880,567 L 878,567 L 874,563 L 871,556 L 870,548 L 871,514 L 883,463 L 883,448 L 880,445 L 872,444 L 862,451 L 853,461 L 850,476 L 823,540 L 821,550 L 818,554 L 813,554 L 799,547 L 794,542 L 787,532 L 783,523 L 783,520 L 787,512 L 799,496 L 800,490 L 794,487 L 772,492 L 761,491 L 754,485 L 735,457 L 724,437 L 714,426 L 707,422 L 703,422 L 695,426 L 684,440 L 672,463 L 662,477 L 659,485 L 644,505 L 613,553 L 610,561 L 602,573 L 587,607 L 587,614 L 593,615 L 643,572 L 647,570 L 655,570 L 658,573 L 660,609 L 662,617 L 664,643 L 664,688 L 660,745 L 656,774 L 645,823 L 624,894 L 617,909 L 612,926 L 602,945 L 595,963 L 581,989 L 552,1035 L 524,1068 L 495,1095 L 464,1114 L 436,1125 L 396,1131 L 380,1129 L 357,1130 L 353,1134 L 353,1140 L 355,1144 L 372,1161 L 408,1182 L 439,1194 L 483,1205 L 533,1208 L 573,1206 L 590,1203 L 622,1194 L 641,1183 L 650,1176 L 681,1142 L 702,1114 L 710,1106 L 723,1086 L 730,1071 L 746,1025 L 765,993 L 806,959 L 825,947 L 848,938 L 881,931 L 898,931 L 916,934 L 926,938 L 933,939 L 961,955 L 982,972 L 993,983 L 1007,1001 L 1009,1006 L 1015,1012 L 1032,1041 L 1039,1056 L 1048,1084 L 1051,1088 L 1056,1110 L 1060,1119 L 1065,1120 L 1072,1088 L 1078,1072 L 1092,1046 L 1101,1033 L 1110,1024 L 1146,1012 L 1196,991 L 1235,980 L 1258,971 L 1259,967 L 1253,963 L 1248,963 L 1229,969 L 1221,970 L 1206,976 L 1187,981 L 1182,984 L 1177,984 L 1162,991 L 1126,1002 L 1082,1022 L 1076,1022 L 1061,1010 L 1034,982 L 1017,967 L 979,937 L 955,924 L 944,920 L 924,916 L 896,915 L 856,919 L 841,922 L 812,933 L 800,939 L 781,955 L 759,977 L 752,987 L 748,988 L 746,986 L 744,978 L 745,977 L 742,913 L 732,769 L 732,701 L 736,674 L 739,665 L 744,632 L 749,614 L 751,600 L 755,589 L 757,574 L 766,550 L 770,546 L 772,546 L 784,567 L 793,575 L 803,580 L 835,589 L 843,589 L 854,586 L 863,587 L 875,591 L 890,600 L 904,606 L 928,610 L 943,610 L 955,605 L 995,596 L 1021,586 L 1039,576 L 1059,559 L 1070,547 L 1081,527 L 1086,513 L 1088,490 L 1088,455 L 1082,389 L 1077,356 L 1073,340 L 1067,325 L 1059,314 L 1038,298 L 1022,290 L 996,280 L 971,275 L 957,274 L 936,262 L 925,260 L 919,257 L 852,245 L 807,240 L 783,240 L 765,243 Z" fill="#ffffff"/>
+                    <path d="M 3203,1386 L 3208,1381 L 3300,1381 L 3315,1386 L 3319,1386 L 3330,1393 L 3341,1404 L 3345,1411 L 3348,1423 L 3345,1441 L 3340,1451 L 3328,1463 L 3319,1469 L 3310,1472 L 3297,1474 L 3207,1473 L 3203,1469 Z M 2022,1394 L 2025,1394 L 2029,1399 L 2038,1424 L 2044,1435 L 2047,1446 L 2057,1466 L 2064,1485 L 2073,1502 L 2073,1507 L 2070,1510 L 1979,1511 L 1973,1506 L 1973,1503 L 1986,1478 L 1987,1473 L 2001,1443 L 2018,1397 Z M 1047,456 L 1050,460 L 1051,467 L 1051,491 L 1049,498 L 1049,507 L 1044,512 L 1042,510 L 1041,502 L 1044,465 Z" fill="#19191d"/>
+                </svg>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm tracking-wider uppercase">
+                <a href="#about" class="hover:text-brand-gold transition-colors">About Trainer</a>
+                <a href="#programs" class="hover:text-brand-gold transition-colors">Training Programs</a>
+                <a href="#calculator" class="hover:text-brand-gold transition-colors">Macro Calculator</a>
+                <a href="#transformations" class="hover:text-brand-gold transition-colors">Transformations</a>
+            </nav>
+
+            <!-- Currency & Action -->
+            <div class="flex items-center gap-4">
+                <select id="currency-select" onchange="updateCurrency(this.value)" class="bg-brand-cardBg border border-brand-border text-brand-gold font-bold text-xs rounded px-2.5 py-1.5 focus:outline-none focus:border-brand-gold">
+                    <option value="INR">₹ INR</option>
+                    <option value="AED">AED</option>
+                    <option value="USD">$ USD</option>
+                </select>
+                <a href="#programs" class="bg-brand-gold hover:bg-brand-goldHover text-black font-heading font-bold px-5 py-2.5 rounded text-sm uppercase tracking-wider transition-all transform hover:scale-105 shadow-lg shadow-brand-gold/20">
+                    Join Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden border-b border-brand-border/40">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1920" alt="Gym Background" class="w-full h-full object-cover opacity-20 filter grayscale">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-darkBg via-brand-darkBg/80 to-transparent"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-xs font-bold uppercase tracking-widest">
+                    <i class="fa-solid fa-fire text-xs"></i> Gold's Gym & 1Rebel Inspired Standards
+                </div>
+                <h1 class="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold uppercase tracking-tight text-white leading-none">
+                    Transform Your Body <span class="text-brand-gold block mt-2">Master Your Mind</span>
+                </h1>
+                <p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Customized high-performance muscle building, hyper-efficient fat loss, and personalized competition preparation programs engineered by Head Coach <strong class="text-white">Wahed Ali</strong>.
+                </p>
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#programs" class="w-full sm:w-auto bg-brand-gold hover:bg-brand-goldHover text-black font-heading font-bold text-lg px-8 py-4 rounded uppercase tracking-wider transition-all text-center">
+                        Explore Programs <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#calculator" class="w-full sm:w-auto bg-brand-cardBg border border-brand-border hover:border-brand-gold text-white font-heading font-bold text-lg px-8 py-4 rounded uppercase tracking-wider transition-all text-center">
+                        Calculate Calories
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 relative">
+                <div class="relative mx-auto max-w-md rounded-2xl overflow-hidden border-2 border-brand-gold/40 shadow-2xl shadow-brand-gold/10 bg-brand-cardBg">
+                    <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&q=80&w=800" alt="Coach Wahed Ali" class="w-full h-[480px] object-cover object-top">
+                    <div class="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent">
+                        <span class="text-brand-gold text-xs font-bold uppercase tracking-widest block">Founder & Head Coach</span>
+                        <h3 class="font-heading text-3xl font-bold text-white">Wahed Ali</h3>
+                        <p class="text-xs text-gray-300 mt-1">10+ Years Elite Coaching • Certified IFBB Master Trainer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="bg-brand-cardBg border-b border-brand-border py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <p class="font-heading text-4xl font-bold text-brand-gold">500+</p>
+                <p class="text-xs text-gray-400 uppercase tracking-widest mt-1">Clients Transformed</p>
+            </div>
+            <div>
+                <p class="font-heading text-4xl font-bold text-brand-gold">10+ YRS</p>
+                <p class="text-xs text-gray-400 uppercase tracking-widest mt-1">Professional Experience</p>
+            </div>
+            <div>
+                <p class="font-heading text-4xl font-bold text-brand-gold">99.2%</p>
+                <p class="text-xs text-gray-400 uppercase tracking-widest mt-1">Success Rate</p>
+            </div>
+            <div>
+                <p class="font-heading text-4xl font-bold text-brand-gold">100%</p>
+                <p class="text-xs text-gray-400 uppercase tracking-widest mt-1">Tailored Coaching</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Wahed Ali -->
+    <section id="about" class="py-20 border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=600" alt="Training" class="rounded-lg object-cover h-64 w-full border border-brand-border">
+                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&q=80&w=600" alt="Personal Training" class="rounded-lg object-cover h-64 w-full border border-brand-border mt-6">
+            </div>
+            <div class="lg:col-span-7 space-y-6">
+                <span class="text-brand-gold font-bold text-sm uppercase tracking-widest block">Meet Head Coach</span>
+                <h2 class="font-heading text-4xl sm:text-5xl font-bold text-white uppercase">Wahed Ali</h2>
+                <p class="text-gray-300 leading-relaxed">
+                    At <strong class="text-white">MUSCLE MATTERZ</strong>, training isn't just a workout routine—it's a precision discipline. Guided by over a decade of hands-on experience, Coach Wahed Ali delivers personalized athletic conditioning, body recomposition, and structural strength development.
+                </p>
+                <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                    <div class="p-4 rounded-lg bg-brand-cardBg border border-brand-border">
+                        <i class="fa-solid fa-award text-brand-gold text-2xl mb-2"></i>
+                        <h4 class="font-heading text-lg font-bold text-white">Certified Master Coach</h4>
+                        <p class="text-xs text-gray-400 mt-1">Specialized in biomechanics, hyper-trophy systems, and injury management.</p>
+                    </div>
+                    <div class="p-4 rounded-lg bg-brand-cardBg border border-brand-border">
+                        <i class="fa-solid fa-utensils text-brand-gold text-2xl mb-2"></i>
+                        <h4 class="font-heading text-lg font-bold text-white">Custom Macro Programming</h4>
+                        <p class="text-xs text-gray-400 mt-1">Scientific macronutrient plans built around your lifestyle and dietary needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Programs Section -->
+    <section id="programs" class="py-20 bg-brand-darkBg border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-gold font-bold text-sm uppercase tracking-widest block">Choose Your Strategy</span>
+                <h2 class="font-heading text-4xl sm:text-5xl font-bold text-white uppercase">Offered Programs</h2>
+                <p class="text-gray-400 text-sm sm:text-base">Select the training package that matches your physique goals and schedule.</p>
+            </div>
+
+            <!-- Program Cards Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Program 1 -->
+                <div class="bg-brand-cardBg rounded-xl border border-brand-border hover:border-brand-gold transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                    <div class="p-8">
+                        <span class="text-xs font-bold text-brand-gold uppercase tracking-widest block mb-2">12-Week Transformation</span>
+                        <h3 class="font-heading text-2xl font-bold text-white uppercase mb-4">Hypertrophy & Shred</h3>
+                        <p class="text-gray-400 text-sm mb-6">Designed for dramatic body recomposition—simultaneous muscle gain and body fat drop.</p>
+                        <div class="my-6 py-4 border-y border-brand-border">
+                            <span class="text-xs text-gray-400 uppercase tracking-widest block">Program Investment</span>
+                            <span class="font-heading text-4xl font-bold text-brand-gold price-tag" data-inr="₹14,999" data-aed="749 AED" data-usd="$199">$199</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> 12-Week Custom Workout Plan</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Weekly Video Check-ins & Form Review</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Personalized Macronutrient Plan</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Direct WhatsApp Access to Coach Wahed</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 pt-0">
+                        <button onclick="openCheckout('Hypertrophy & Shred', 14999, 749, 199)" class="w-full bg-brand-gold hover:bg-brand-goldHover text-black font-heading font-bold py-3 rounded uppercase tracking-wider transition-all">
+                            Select & Pay via Razorpay
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Program 2 (Featured) -->
+                <div class="bg-brand-cardBg rounded-xl border-2 border-brand-gold relative flex flex-col justify-between overflow-hidden shadow-xl shadow-brand-gold/10">
+                    <div class="absolute top-0 right-0 bg-brand-gold text-black font-heading font-bold text-xs px-4 py-1 uppercase tracking-widest">Most Popular</div>
+                    <div class="p-8">
+                        <span class="text-xs font-bold text-brand-gold uppercase tracking-widest block mb-2">1-on-1 Personal Training</span>
+                        <h3 class="font-heading text-2xl font-bold text-white uppercase mb-4">VIP Private Coaching</h3>
+                        <p class="text-gray-400 text-sm mb-6">In-person personal coaching sessions directly supervised by Coach Wahed Ali.</p>
+                        <div class="my-6 py-4 border-y border-brand-border">
+                            <span class="text-xs text-gray-400 uppercase tracking-widest block">Monthly Investment</span>
+                            <span class="font-heading text-4xl font-bold text-brand-gold price-tag" data-inr="₹24,999" data-aed="1,249 AED" data-usd="$329">$329</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> 12 Private 1-on-1 Sessions / Month</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Complete Biometric Tracking</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Custom Nutrition & Supplementation</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Priority Gym Booking & VIP Support</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 pt-0">
+                        <button onclick="openCheckout('VIP Private Coaching', 24999, 1249, 329)" class="w-full bg-brand-gold hover:bg-brand-goldHover text-black font-heading font-bold py-3 rounded uppercase tracking-wider transition-all">
+                            Select & Pay via Razorpay
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="bg-brand-cardBg rounded-xl border border-brand-border hover:border-brand-gold transition-all duration-300 flex flex-col justify-between overflow-hidden group">
+                    <div class="p-8">
+                        <span class="text-xs font-bold text-brand-gold uppercase tracking-widest block mb-2">Competition Prep</span>
+                        <h3 class="font-heading text-2xl font-bold text-white uppercase mb-4">Pro Stage Physique</h3>
+                        <p class="text-gray-400 text-sm mb-6">Rigorous, stage-ready preparation for classic physique and bodybuilding athletes.</p>
+                        <div class="my-6 py-4 border-y border-brand-border">
+                            <span class="text-xs text-gray-400 uppercase tracking-widest block">Full Prep Package</span>
+                            <span class="font-heading text-4xl font-bold text-brand-gold price-tag" data-inr="₹39,999" data-aed="1,999 AED" data-usd="$529">$529</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-gray-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> 16-Week Stage Conditioning</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Posing Coaching & Routine Design</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Peak Week Water & Sodium Protocol</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> 24/7 Direct Guidance</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 pt-0">
+                        <button onclick="openCheckout('Pro Stage Physique Prep', 39999, 1999, 529)" class="w-full bg-brand-gold hover:bg-brand-goldHover text-black font-heading font-bold py-3 rounded uppercase tracking-wider transition-all">
+                            Select & Pay via Razorpay
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Macro / Calorie Calculator Widget -->
+    <section id="calculator" class="py-20 border-b border-brand-border bg-brand-cardBg/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-brand-gold font-bold text-sm uppercase tracking-widest block">Interactive Fitness Tool</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white uppercase">BMI & Calorie Target Calculator</h2>
+            </div>
+
+            <div class="bg-brand-cardBg p-6 sm:p-8 rounded-xl border border-brand-border grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <div>
+                        <label class="text-xs font-bold uppercase text-gray-300 block mb-1">Gender</label>
+                        <select id="calc-gender" class="w-full bg-brand-darkBg border border-brand-border rounded p-2.5 text-white focus:border-brand-gold outline-none">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-xs font-bold uppercase text-gray-300 block mb-1">Age (Years)</label>
+                            <input type="number" id="calc-age" value="25" class="w-full bg-brand-darkBg border border-brand-border rounded p-2.5 text-white focus:border-brand-gold outline-none">
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold uppercase text-gray-300 block mb-1">Weight (KG)</label>
+                            <input type="number" id="calc-weight" value="75" class="w-full bg-brand-darkBg border border-brand-border rounded p-2.5 text-white focus:border-brand-gold outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold uppercase text-gray-300 block mb-1">Height (CM)</label>
+                        <input type="number" id="calc-height" value="178" class="w-full bg-brand-darkBg border border-brand-border rounded p-2.5 text-white focus:border-brand-gold outline-none">
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold uppercase text-gray-300 block mb-1">Primary Goal</label>
+                        <select id="calc-goal" class="w-full bg-brand-darkBg border border-brand-border rounded p-2.5 text-white focus:border-brand-gold outline-none">
+                            <option value="cut">Fat Loss (-500 kcal)</option>
+                            <option value="maintain">Maintain Weight</option>
+                            <option value="bulk">Muscle Gain (+400 kcal)</option>
+                        </select>
+                    </div>
+                    <button onclick="calculateFitness()" class="w-full bg-brand-gold hover:bg-brand-goldHover text-black font-heading font-bold py-3 rounded uppercase tracking-wider transition-all mt-2">
+                        Calculate Metrics
+                    </button>
+                </div>
+
+                <div class="flex flex-col justify-center bg-brand-darkBg p-6 rounded-lg border border-brand-border space-y-6">
+                    <div class="text-center">
+                        <span class="text-xs text-gray-400 uppercase tracking-widest block">Your BMI Score</span>
+                        <span id="bmi-val" class="font-heading text-4xl font-bold text-brand-gold">23.7</span>
+                        <span id="bmi-status" class="text-xs text-green-400 font-bold block mt-1">Normal Weight</span>
+                    </div>
+                    <div class="border-t border-brand-border pt-4 text-center">
+                        <span class="text-xs text-gray-400 uppercase tracking-widest block">Estimated Daily Calories</span>
+                        <span id="calorie-val" class="font-heading text-4xl font-bold text-white">2,250 <span class="text-sm font-normal text-gray-400">kcal/day</span></span>
+                    </div>
+                    <p class="text-xs text-gray-500 text-center">Note: This estimation serves as a baseline. Final macronutrient targets are calibrated individually inside Coach Wahed Ali's custom programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformations Gallery -->
+    <section id="transformations" class="py-20 border-b border-brand-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-gold font-bold text-sm uppercase tracking-widest block">Proven Results</span>
+                <h2 class="font-heading text-4xl sm:text-5xl font-bold text-white uppercase">Client Transformations</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-brand-cardBg rounded-xl overflow-hidden border border-brand-border">
+                    <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=600" alt="Transformation 1" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="font-heading text-xl font-bold text-white uppercase">Rahul S.</h4>
+                        <p class="text-brand-gold text-xs font-bold mb-2">Lost 18kg in 16 Weeks</p>
+                        <p class="text-gray-400 text-xs">"Wahed's structured diet and heavy compound lifting transformed my physique completely."</p>
+                    </div>
+                </div>
+                <div class="bg-brand-cardBg rounded-xl overflow-hidden border border-brand-border">
+                    <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&q=80&w=600" alt="Transformation 2" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="font-heading text-xl font-bold text-white uppercase">Ahmed K.</h4>
+                        <p class="text-brand-gold text-xs font-bold mb-2">Gained 7kg Lean Muscle</p>
+                        <p class="text-gray-400 text-xs">"The VIP private coaching is top-tier. Biomechanics feedback fixed my bench and squat mechanics."</p>
+                    </div>
+                </div>
+                <div class="bg-brand-cardBg rounded-xl overflow-hidden border border-brand-border">
+                    <img src="https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?auto=format&fit=crop&q=80&w=600" alt="Transformation 3" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="font-heading text-xl font-bold text-white uppercase">Vikram M.</h4>
+                        <p class="text-brand-gold text-xs font-bold mb-2">Stage Prep Success</p>
+                        <p class="text-gray-400 text-xs">"Brought my best conditioning to date under Coach Wahed's precise peak week timing."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-brand-border/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <div class="flex justify-center">
+                <svg class="h-10 w-auto" viewBox="0 0 4080 2112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 3497,1339 L 3494,1345 L 3494,1374 L 3496,1379 L 3499,1381 L 3649,1381 L 3655,1383 L 3658,1387 L 3656,1391 L 3640,1408 L 3620,1433 L 3592,1463 L 3573,1487 L 3557,1503 L 3540,1525 L 3492,1579 L 3484,1592 L 3484,1616 L 3488,1620 L 3492,1621 L 3731,1621 L 3735,1619 L 3737,1610 L 3736,1582 L 3732,1578 L 3564,1578 L 3560,1576 L 3558,1573 L 3559,1569 L 3582,1545 L 3619,1500 L 3634,1485 L 3656,1457 L 3684,1427 L 3702,1404 L 3714,1393 L 3726,1377 L 3731,1373 L 3733,1366 L 3733,1344 L 3731,1340 L 3726,1337 L 3502,1337 Z M 3160,1339 L 3158,1342 L 3157,1617 L 3160,1620 L 3164,1621 L 3194,1621 L 3199,1620 L 3202,1617 L 3202,1522 L 3208,1516 L 3282,1516 L 3319,1569 L 3335,1595 L 3353,1619 L 3358,1621 L 3403,1620 L 3405,1618 L 3405,1615 L 3376,1574 L 3337,1514 L 3337,1510 L 3341,1506 L 3361,1494 L 3378,1477 L 3386,1464 L 3391,1452 L 3395,1430 L 3394,1412 L 3391,1400 L 3378,1375 L 3362,1358 L 3346,1348 L 3324,1340 L 3305,1337 L 3164,1337 Z M 2845,1338 L 2842,1342 L 2841,1348 L 2842,1617 L 2845,1620 L 2850,1621 L 3045,1621 L 3051,1619 L 3053,1616 L 3053,1586 L 3052,1582 L 3046,1578 L 2897,1579 L 2891,1577 L 2887,1573 L 2887,1502 L 2889,1498 L 2895,1496 L 3026,1496 L 3030,1493 L 3030,1459 L 3028,1456 L 3023,1454 L 2891,1453 L 2887,1449 L 2888,1385 L 2896,1381 L 3049,1380 L 3052,1377 L 3053,1369 L 3053,1347 L 3051,1340 L 3046,1337 Z M 2523,1338 L 2520,1340 L 2518,1348 L 2519,1376 L 2521,1379 L 2527,1381 L 2609,1381 L 2613,1384 L 2614,1616 L 2617,1620 L 2620,1621 L 2656,1620 L 2659,1617 L 2660,1385 L 2663,1382 L 2667,1381 L 2750,1381 L 2754,1379 L 2757,1375 L 2756,1342 L 2754,1339 L 2748,1337 Z M 2229,1338 L 2226,1342 L 2226,1376 L 2228,1379 L 2232,1381 L 2315,1381 L 2318,1382 L 2321,1386 L 2321,1616 L 2326,1621 L 2362,1620 L 2366,1618 L 2367,1386 L 2372,1381 L 2457,1381 L 2463,1377 L 2464,1373 L 2462,1340 L 2457,1337 Z M 2001,1339 L 1997,1344 L 1977,1391 L 1967,1410 L 1947,1459 L 1932,1489 L 1925,1508 L 1910,1539 L 1895,1577 L 1881,1605 L 1877,1618 L 1883,1621 L 1915,1621 L 1921,1619 L 1925,1614 L 1926,1609 L 1942,1577 L 1948,1560 L 1956,1554 L 2090,1553 L 2094,1555 L 2099,1561 L 2103,1574 L 2125,1619 L 2130,1621 L 2167,1621 L 2171,1619 L 2173,1616 L 2160,1591 L 2149,1562 L 2142,1550 L 2138,1537 L 2134,1531 L 2124,1505 L 2112,1482 L 2094,1437 L 2050,1340 L 2046,1337 L 2007,1337 Z M 1488,1341 L 1487,1617 L 1493,1621 L 1525,1621 L 1530,1619 L 1532,1616 L 1531,1457 L 1529,1437 L 1529,1421 L 1532,1418 L 1540,1426 L 1579,1478 L 1587,1491 L 1617,1529 L 1620,1535 L 1627,1540 L 1650,1540 L 1655,1536 L 1675,1510 L 1682,1498 L 1702,1475 L 1719,1449 L 1726,1442 L 1743,1419 L 1746,1419 L 1748,1421 L 1749,1428 L 1747,1434 L 1745,1457 L 1745,1617 L 1751,1621 L 1784,1621 L 1790,1618 L 1791,1344 L 1787,1338 L 1753,1337 L 1747,1339 L 1729,1361 L 1727,1366 L 1683,1425 L 1648,1476 L 1641,1483 L 1637,1483 L 1631,1478 L 1611,1447 L 1569,1391 L 1546,1357 L 1531,1339 L 1525,1337 L 1493,1337 Z M 3249,939 L 3244,946 L 3245,1219 L 3249,1223 L 3451,1222 L 3455,1215 L 3455,1185 L 3448,1180 L 3294,1180 L 3291,1177 L 3289,1172 L 3289,1107 L 3290,1103 L 3293,1100 L 3426,1099 L 3430,1097 L 3433,1093 L 3433,1062 L 3427,1056 L 3293,1055 L 3289,1050 L 3289,988 L 3292,984 L 3307,982 L 3447,983 L 3452,981 L 3455,975 L 3454,943 L 3448,938 Z M 2941,939 L 2938,943 L 2937,957 L 2937,1215 L 2939,1220 L 2943,1223 L 3143,1222 L 3147,1214 L 3147,1185 L 3139,1180 L 2993,1181 L 2988,1180 L 2983,1175 L 2983,945 L 2981,941 L 2973,938 Z M 1907,939 L 1903,947 L 1903,1086 L 1905,1123 L 1909,1140 L 1916,1158 L 1938,1188 L 1959,1205 L 1978,1215 L 1990,1218 L 1998,1222 L 2017,1225 L 2053,1225 L 2069,1222 L 2094,1213 L 2110,1204 L 2124,1193 L 2131,1186 L 2150,1160 L 2157,1144 L 2162,1123 L 2164,1098 L 2163,942 L 2158,938 L 2128,938 L 2124,940 L 2120,946 L 2120,1104 L 2117,1123 L 2113,1129 L 2109,1140 L 2095,1159 L 2086,1164 L 2081,1169 L 2071,1174 L 2064,1175 L 2056,1180 L 2051,1181 L 2020,1181 L 2011,1179 L 1994,1172 L 1977,1161 L 1966,1149 L 1959,1138 L 1951,1119 L 1948,1093 L 1948,942 L 1942,938 Z M 1489,941 L 1487,945 L 1487,1216 L 1490,1222 L 1520,1224 L 1527,1223 L 1531,1218 L 1531,1054 L 1529,1041 L 1529,1023 L 1531,1020 L 1533,1020 L 1545,1034 L 1619,1135 L 1628,1142 L 1644,1142 L 1650,1141 L 1655,1138 L 1671,1115 L 1700,1079 L 1708,1066 L 1714,1060 L 1736,1028 L 1745,1019 L 1747,1019 L 1749,1021 L 1747,1034 L 1745,1063 L 1745,1218 L 1751,1223 L 1786,1223 L 1790,1219 L 1791,946 L 1788,940 L 1783,938 L 1754,938 L 1745,942 L 1735,957 L 1722,972 L 1705,999 L 1678,1033 L 1643,1083 L 1638,1086 L 1627,1074 L 1614,1053 L 1562,983 L 1553,968 L 1540,953 L 1537,947 L 1529,939 L 1495,938 Z M 2699,938 L 2665,948 L 2642,960 L 2616,980 L 2600,998 L 2584,1025 L 2576,1054 L 2573,1084 L 2577,1116 L 2585,1143 L 2599,1167 L 2619,1189 L 2638,1204 L 2667,1217 L 2688,1224 L 2706,1226 L 2748,1226 L 2764,1223 L 2810,1206 L 2822,1199 L 2838,1186 L 2838,1178 L 2823,1153 L 2820,1150 L 2816,1150 L 2808,1154 L 2803,1159 L 2780,1171 L 2758,1180 L 2749,1182 L 2717,1182 L 2700,1180 L 2682,1174 L 2670,1168 L 2653,1157 L 2645,1149 L 2632,1133 L 2625,1118 L 2620,1099 L 2619,1089 L 2620,1067 L 2625,1048 L 2631,1033 L 2636,1025 L 2658,1003 L 2683,989 L 2695,985 L 2711,982 L 2735,982 L 2755,985 L 2782,996 L 2812,1016 L 2821,1015 L 2843,988 L 2838,978 L 2818,963 L 2797,952 L 2774,943 L 2749,937 Z M 2350,937 L 2329,943 L 2305,954 L 2285,971 L 2277,981 L 2271,994 L 2268,1007 L 2268,1025 L 2273,1047 L 2281,1060 L 2296,1075 L 2319,1088 L 2338,1095 L 2419,1111 L 2435,1117 L 2447,1128 L 2451,1135 L 2451,1154 L 2446,1163 L 2436,1173 L 2420,1181 L 2412,1182 L 2402,1186 L 2365,1186 L 2347,1182 L 2323,1171 L 2315,1164 L 2306,1159 L 2290,1141 L 2286,1139 L 2280,1139 L 2257,1166 L 2256,1174 L 2268,1188 L 2292,1206 L 2310,1214 L 2326,1218 L 2334,1222 L 2362,1226 L 2401,1226 L 2418,1224 L 2438,1218 L 2463,1206 L 2469,1202 L 2483,1188 L 2495,1166 L 2499,1147 L 2500,1130 L 2495,1112 L 2489,1101 L 2476,1088 L 2454,1075 L 2428,1066 L 2406,1063 L 2355,1052 L 2330,1042 L 2318,1029 L 2315,1018 L 2316,1007 L 2318,1001 L 2323,994 L 2337,984 L 2360,977 L 2390,976 L 2407,979 L 2421,984 L 2431,989 L 2446,1000 L 2458,1013 L 2466,1014 L 2483,998 L 2490,988 L 2490,983 L 2484,974 L 2475,965 L 2459,954 L 2448,948 L 2417,937 L 2402,937 L 2392,935 L 2368,935 Z M 721,257 L 714,261 L 696,267 L 666,283 L 659,289 L 644,308 L 623,347 L 615,367 L 601,393 L 592,415 L 565,467 L 562,478 L 557,485 L 551,498 L 479,607 L 469,620 L 465,629 L 374,762 L 369,774 L 363,782 L 353,802 L 331,837 L 309,880 L 303,897 L 298,906 L 297,912 L 292,922 L 279,959 L 266,1018 L 262,1054 L 256,1084 L 250,1105 L 240,1129 L 234,1148 L 232,1163 L 233,1191 L 241,1223 L 251,1245 L 279,1284 L 313,1317 L 325,1325 L 340,1338 L 376,1360 L 407,1375 L 441,1396 L 451,1400 L 516,1444 L 569,1475 L 591,1485 L 604,1493 L 622,1499 L 644,1511 L 725,1542 L 751,1548 L 775,1556 L 826,1567 L 842,1568 L 847,1570 L 883,1575 L 909,1577 L 987,1577 L 1112,1552 L 1126,1551 L 1145,1547 L 1180,1545 L 1186,1549 L 1204,1587 L 1240,1649 L 1264,1673 L 1271,1673 L 1275,1667 L 1276,1372 L 1274,1354 L 1262,1334 L 1244,1321 L 1204,1300 L 1193,1291 L 1181,1278 L 1182,1273 L 1188,1267 L 1211,1251 L 1221,1241 L 1225,1239 L 1247,1214 L 1251,1206 L 1252,1200 L 1250,1194 L 1247,1190 L 1243,1188 L 1230,1185 L 1213,1185 L 1193,1187 L 1172,1192 L 1161,1193 L 1144,1198 L 1133,1204 L 1123,1207 L 1087,1231 L 1037,1255 L 991,1267 L 959,1268 L 928,1265 L 901,1256 L 897,1256 L 864,1239 L 822,1204 L 805,1186 L 787,1163 L 784,1161 L 780,1161 L 781,1171 L 793,1202 L 824,1239 L 860,1266 L 889,1280 L 898,1286 L 932,1301 L 950,1307 L 983,1324 L 999,1337 L 1004,1345 L 1007,1355 L 989,1375 L 957,1390 L 931,1399 L 920,1400 L 888,1408 L 842,1415 L 735,1421 L 639,1420 L 602,1417 L 598,1413 L 599,1400 L 605,1382 L 605,1378 L 615,1360 L 642,1331 L 697,1282 L 694,1279 L 655,1289 L 641,1290 L 612,1296 L 550,1301 L 470,1301 L 412,1295 L 402,1292 L 379,1289 L 337,1278 L 320,1271 L 301,1260 L 277,1238 L 273,1230 L 260,1214 L 247,1192 L 246,1162 L 248,1150 L 253,1133 L 263,1112 L 271,1085 L 275,1062 L 277,1032 L 286,987 L 300,940 L 304,931 L 305,924 L 325,876 L 343,841 L 369,800 L 373,788 L 379,777 L 405,739 L 408,732 L 415,724 L 451,669 L 458,661 L 470,640 L 481,626 L 517,570 L 533,548 L 537,540 L 563,506 L 571,491 L 576,477 L 582,467 L 589,449 L 605,418 L 607,411 L 630,366 L 631,360 L 635,354 L 636,349 L 646,328 L 660,305 L 670,296 L 694,282 L 724,270 L 738,267 L 769,256 L 792,253 L 814,253 L 833,256 L 845,256 L 858,260 L 876,262 L 893,267 L 913,270 L 934,276 L 955,288 L 971,289 L 1018,303 L 1035,312 L 1043,320 L 1047,329 L 1047,345 L 1044,348 L 1040,348 L 1028,341 L 1021,341 L 1016,345 L 1000,375 L 992,403 L 987,434 L 984,444 L 984,454 L 981,466 L 979,485 L 976,493 L 974,515 L 964,547 L 962,549 L 959,549 L 957,546 L 957,529 L 955,516 L 956,495 L 967,446 L 975,424 L 978,402 L 973,394 L 960,387 L 954,385 L 942,386 L 931,394 L 925,404 L 916,435 L 910,485 L 900,529 L 896,539 L 896,543 L 886,562 L 880,567 L 878,567 L 874,563 L 871,556 L 870,548 L 871,514 L 883,463 L 883,448 L 880,445 L 872,444 L 862,451 L 853,461 L 850,476 L 823,540 L 821,550 L 818,554 L 813,554 L 799,547 L 794,542 L 787,532 L 783,523 L 783,520 L 787,512 L 799,496 L 800,490 L 794,487 L 772,492 L 761,491 L 754,485 L 735,457 L 724,437 L 714,426 L 707,422 L 703,422 L 695,426 L 684,440 L 672,463 L 662,477 L 659,485 L 644,505 L 613,553 L 610,561 L 602,573 L 587,607 L 587,614 L 593,615 L 643,572 L 647,570 L 655,570 L 658,573 L 660,609 L 662,617 L 664,643 L 664,688 L 660,745 L 656,774 L 645,823 L 624,894 L 617,909 L 612,926 L 602,945 L 595,963 L 581,989 L 552,1035 L 524,1068 L 495,1095 L 464,1114 L 436,1125 L 396,1131 L 380,1129 L 357,1130 L 353,1134 L 353,1140 L 355,1144 L 372,1161 L 408,1182 L 439,1194 L 483,1205 L 533,1208 L 573,1206 L 590,1203 L 622,1194 L 641,1183 L 650,1176 L 681,1142 L 702,1114 L 710,1106 L 723,1086 L 730,1071 L 746,1025 L 765,993 L 806,959 L 825,947 L 848,938 L 881,931 L 898,931 L 916,934 L 926,938 L 933,939 L 961,955 L 982,972 L 993,983 L 1007,1001 L 1009,1006 L 1015,1012 L 1032,1041 L 1039,1056 L 1048,1084 L 1051,1088 L 1056,1110 L 1060,1119 L 1065,1120 L 1072,1088 L 1078,1072 L 1092,1046 L 1101,1033 L 1110,1024 L 1146,1012 L 1196,991 L 1235,980 L 1258,971 L 1259,967 L 1253,963 L 1248,963 L 1229,969 L 1221,970 L 1206,976 L 1187,981 L 1182,984 L 1177,984 L 1162,991 L 1126,1002 L 1082,1022 L 1076,1022 L 1061,1010 L 1034,982 L 1017,967 L 979,937 L 955,924 L 944,920 L 924,916 L 896,915 L 856,919 L 841,922 L 812,933 L 800,939 L 781,955 L 759,977 L 752,987 L 748,988 L 746,986 L 744,978 L 745,977 L 742,913 L 732,769 L 732,701 L 736,674 L 739,665 L 744,632 L 749,614 L 751,600 L 755,589 L 757,574 L 766,550 L 770,546 L 772,546 L 784,567 L 793,575 L 803,580 L 835,589 L 843,589 L 854,586 L 863,587 L 875,591 L 890,600 L 904,606 L 928,610 L 943,610 L 955,605 L 995,596 L 1021,586 L 1039,576 L 1059,559 L 1070,547 L 1081,527 L 1086,513 L 1088,490 L 1088,455 L 1082,389 L 1077,356 L 1073,340 L 1067,325 L 1059,314 L 1038,298 L 1022,290 L 996,280 L 971,275 L 957,274 L 936,262 L 925,260 L 919,257 L 852,245 L 807,240 L 783,240 L 765,243 Z" fill="#ffffff"/>
+                </svg>
+            </div>
+            <p class="text-xs text-gray-500 uppercase tracking-widest">MUSCLE MATTERZ • Head Coach Wahed Ali • Powered by Razorpay Checkout</p>
+            <p class="text-xs text-gray-600">© 2026 MUSCLE MATTERZ. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Razorpay Payment Drawer Modal -->
+    <div id="checkout-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-brand-cardBg border border-brand-border w-full max-w-lg rounded-2xl overflow-hidden shadow-2xl relative">
+            <button onclick="closeCheckout()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl z-10">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Razorpay Header Bar -->
+            <div class="bg-blue-950 p-6 text-white border-b border-blue-900 flex items-center justify-between">
+                <div>
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-widest block">Razorpay Gateway</span>
+                    <h4 id="modal-program-title" class="font-heading text-xl font-bold">Program Name</h4>
+                </div>
+                <div class="text-right">
+                    <span class="text-xs text-gray-300 block">Amount</span>
+                    <span id="modal-program-price" class="font-heading text-2xl font-bold text-brand-gold">₹0</span>
+                </div>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="p-6 space-y-4">
+                <div id="payment-form" class="space-y-4">
+                    <div>
+                        <label class="text-xs font-bold uppercase text-gray-300 block mb-1">Full Name</label>
+                        <input type="text" id="cust-name" placeholder="John Doe" class="w-full bg-brand-darkBg border border-brand-border rounded p-2.5 text-white focus:border-brand-gold outline-none text-sm">
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold uppercase text-gray-300 block mb-1">Email Address</label>
+                        <input type="email" id="cust-email" placeholder="john@example.com" class="w-full bg-brand-darkBg border border-brand-border rounded p-2.5 text-white focus:border-brand-gold outline-none text-sm">
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold uppercase text-gray-300 block mb-1">Phone Number</label>
+                        <input type="tel" id="cust-phone" placeholder="+91 98765 43210" class="w-full bg-brand-darkBg border border-brand-border rounded p-2.5 text-white focus:border-brand-gold outline-none text-sm">
+                    </div>
+                    <div>
+                        <label class="text-xs font-bold uppercase text-gray-300 block mb-1">Payment Method</label>
+                        <div class="grid grid-cols-3 gap-3">
+                            <label class="border border-brand-border rounded p-3 text-center cursor-pointer hover:border-brand-gold flex flex-col items-center gap-1">
+                                <input type="radio" name="pay-method" value="upi" checked class="accent-brand-gold">
+                                <span class="text-xs font-bold text-white">UPI / GPay</span>
+                            </label>
+                            <label class="border border-brand-border rounded p-3 text-center cursor-pointer hover:border-brand-gold flex flex-col items-center gap-1">
+                                <input type="radio" name="pay-method" value="card" class="accent-brand-gold">
+                                <span class="text-xs font-bold text-white">Card</span>
+                            </label>
+                            <label class="border border-brand-border rounded p-3 text-center cursor-pointer hover:border-brand-gold flex flex-col items-center gap-1">
+                                <input type="radio" name="pay-method" value="netbanking" class="accent-brand-gold">
+                                <span class="text-xs font-bold text-white">NetBanking</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button onclick="processPayment()" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-heading font-bold py-3.5 rounded uppercase tracking-wider transition-all mt-4 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-lock"></i> Pay Now Securly via Razorpay
+                    </button>
+                </div>
+
+                <!-- Payment Processing Loader State -->
+                <div id="payment-loader" class="hidden py-12 text-center space-y-4">
+                    <i class="fa-solid fa-circle-notch fa-spin text-4xl text-brand-gold"></i>
+                    <p class="text-sm text-gray-300 font-bold">Connecting to Razorpay Secure Server...</p>
+                    <p class="text-xs text-gray-500">Please do not refresh or close this window.</p>
+                </div>
+
+                <!-- Payment Success State -->
+                <div id="payment-success" class="hidden py-8 text-center space-y-4">
+                    <div class="w-16 h-16 bg-green-500/20 text-green-400 rounded-full flex items-center justify-center mx-auto text-3xl border border-green-500">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-white">Payment Successful!</h3>
+                    <p class="text-xs text-gray-300">Transaction ID: <span id="txn-id" class="text-brand-gold font-mono">pay_Rzp982347102</span></p>
+                    <p class="text-xs text-gray-400">Coach Wahed Ali will reach out to your registered phone number within 2 hours to start your onboarding.</p>
+                    <button onclick="closeCheckout()" class="bg-brand-gold text-black font-heading font-bold px-6 py-2.5 rounded uppercase text-xs tracking-wider mt-4">
+                        Done
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        let currentCurrency = 'INR';
+        let selectedProgram = { name: '', priceINR: 0, priceAED: 0, priceUSD: 0 };
+
+        // Currency Switcher Logic
+        function updateCurrency(val) {
+            currentCurrency = val;
+            const priceTags = document.querySelectorAll('.price-tag');
+            priceTags.forEach(tag => {
+                if (val === 'INR') tag.textContent = tag.getAttribute('data-inr');
+                else if (val === 'AED') tag.textContent = tag.getAttribute('data-aed');
+                else if (val === 'USD') tag.textContent = tag.getAttribute('data-usd');
+            });
+        }
+
+        // Open Razorpay Checkout Modal
+        function openCheckout(name, inr, aed, usd) {
+            selectedProgram = { name, priceINR: inr, priceAED: aed, priceUSD: usd };
+            document.getElementById('modal-program-title').textContent = name;
+            
+            let priceFormatted = `₹${inr.toLocaleString()}`;
+            if (currentCurrency === 'AED') priceFormatted = `${aed} AED`;
+            if (currentCurrency === 'USD') priceFormatted = `$${usd}`;
+            
+            document.getElementById('modal-program-price').textContent = priceFormatted;
+            
+            document.getElementById('payment-form').classList.remove('hidden');
+            document.getElementById('payment-loader').classList.add('hidden');
+            document.getElementById('payment-success').classList.add('hidden');
+            document.getElementById('checkout-modal').classList.remove('hidden');
+        }
+
+        // Close Razorpay Modal
+        function closeCheckout() {
+            document.getElementById('checkout-modal').classList.add('hidden');
+        }
+
+        // Simulate Razorpay Gateway Transaction
+        function processPayment() {
+            const name = document.getElementById('cust-name').value;
+            const email = document.getElementById('cust-email').value;
+            const phone = document.getElementById('cust-phone').value;
+
+            if (!name || !email || !phone) {
+                alert('Please fill out all contact fields before proceeding to payment.');
+                return;
+            }
+
+            document.getElementById('payment-form').classList.add('hidden');
+            document.getElementById('payment-loader').classList.remove('hidden');
+
+            setTimeout(() => {
+                document.getElementById('payment-loader').classList.add('hidden');
+                document.getElementById('payment-success').classList.remove('hidden');
+                document.getElementById('txn-id').textContent = 'pay_RZP' + Math.floor(100000000 + Math.random() * 900000000);
+            }, 2000);
+        }
+
+        // Fitness & Calorie Calculator
+        function calculateFitness() {
+            const gender = document.getElementById('calc-gender').value;
+            const age = parseFloat(document.getElementById('calc-age').value) || 25;
+            const weight = parseFloat(document.getElementById('calc-weight').value) || 75;
+            const height = parseFloat(document.getElementById('calc-height').value) || 178;
+            const goal = document.getElementById('calc-goal').value;
+
+            // BMI Calculation
+            const heightM = height / 100;
+            const bmi = (weight / (heightM * heightM)).toFixed(1);
+            document.getElementById('bmi-val').textContent = bmi;
+
+            let status = 'Normal Weight';
+            if (bmi < 18.5) status = 'Underweight';
+            else if (bmi >= 25 && bmi < 29.9) status = 'Overweight';
+            else if (bmi >= 30) status = 'Obese';
+            document.getElementById('bmi-status').textContent = status;
+
+            // BMR Calculation (Mifflin-St Jeor Equation)
+            let bmr = (10 * weight) + (6.25 * height) - (5 * age) + (gender === 'male' ? 5 : -161);
+            let tdee = bmr * 1.375; // Moderate Activity Factor
+
+            if (goal === 'cut') tdee -= 500;
+            if (goal === 'bulk') tdee += 400;
+
+            document.getElementById('calorie-val').innerHTML = `${Math.round(tdee).toLocaleString()} <span class="text-sm font-normal text-gray-400">kcal/day</span>`;
+        }
+    </script>
+</body>
+</html>
